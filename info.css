@@ -17,144 +17,49 @@ body {
 }
 
 
-/*====dynamic pictures==========================================================*/
+/*-----------------*/
 
-#container {
-    height: 140px;
-    max-width: 610px;
-    /*margin-top: .25rem;
-    margin-bottom: .25rem;*/
-    margin: 0 auto;
+li {
+    transition: all .9s ease-in-out;
+    font-family: 'Bree Serif', serif;
+    font-style: italic;
+    color: #0404B4;
+    text-decoration: none;
+    padding-top: height: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-family: 'Bree Serif', serif;
+    align: left;
+    list-style: none;
+    background-color: #FFCF35;
+    align-content: center;
+    text-align: center;
 }
 
-#container img {
-    position: absolute;
+a:hover {
+    transform: scale(1);
+    color: #009eff;
 }
 
-@-webkit-keyframes imgFade {
-    0% {
-        opacity: 1;
-    }
-    17% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    92% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.mainnav {
+    float: left;
+    width: 98%;
+    padding-top: .5rem;
+    margin-top: .5rem;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
-@-moz-keyframes imgFade {
-    0% {
-        opacity: 1;
-    }
-    17% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    92% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
-@-o-keyframes imgFade {
-    0% {
-        opacity: 1;
-    }
-    17% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    92% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes imgFade {
-    0% {
-        opacity: 1;
-    }
-    17% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    92% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-#container img {
-    -webkit-animation-name: imgFade;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 8s;
-    -moz-animation-name: imgFade;
-    -moz-animation-timing-function: ease-in-out;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-duration: 8s;
-    -o-animation-name: imgFade;
-    -o-animation-timing-function: ease-in-out;
-    -o-animation-iteration-count: infinite;
-    -o-animation-duration: 8s;
-    animation-name: imgFade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 8s;
-}
-
-#container img:nth-of-type(1) {
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
-}
-
-#container img:nth-of-type(2) {
-    -webkit-animation-delay: 4s;
-    -moz-animation-delay: 4s;
-    -o-animation-delay: 4s;
-    animation-delay: 4s;
-}
-
-#container img:nth-of-type(3) {
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    -o-animation-delay: 2s;
-    animation-delay: 2s;
-}
-
-#container img:nth-of-type(4) {
-    -webkit-animation-delay: 0;
-    -moz-animation-delay: 0;
-    -o-animation-delay: 0;
-    animation-delay: 0;
-}
+/*-------------------*/
 
 header {
     margin-left: .1rem;
-    padding-bottom: ;
     width: 100%;
     height: auto;
+    margin-bottom: ;
 }
 
 h1 {
@@ -215,17 +120,16 @@ h1 {
 }*/
 
 h3 {
-    margin-top: 1.7rem;
+    margin-top: .7rem;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     font-family: 'Roboto Condensed', sans-serif;
-    padding: .75rem;
 }
 
 .wrapper {
     align-content: center;
     width: 95%;
-    margin: 1rem 0rem 3.2rem 0rem;
+    margin: 1rem 0rem 1.2rem 0rem;
 }
 
 span {
@@ -265,16 +169,14 @@ span {
 /*---------------------------------------------------------------------------*/
 
 .primary {
+    margin-top: 11.15rem;
     background-color: rgba(194, 168, 66, 0.96);
     font-family: 'Droid Serif', serif;
     font-size: 1.3rem;
-    margin: .25rem, .25rem;
     padding: .25rem .5rem .5rem .5rem;
     margin-left: .08rem;
-    margin-right: .85rem;
-    margin-top: 1.5rem;
-    box-sizing: ;
-    border-bottom: 1rem;
+    margin-right: .35rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -293,6 +195,10 @@ span {
     max-height: 15.2rem;
 }
 
+img {
+    display: none;
+}
+
 
 /* ============================= for tablet screen =========every em=about 16px=========================*/
 
@@ -301,32 +207,32 @@ span {
         width: 100%;
     }
     .primary {
+        max-width: 98%;
+        margin-top: 10rem;
+    }
+    .mainnav ul {
+        max-width: 100%;
+        margin-bottom: 1.2rem;
+    }
+    .mainnav ul li {
         float: left;
-        max-width: 85%;
-        padding: 5px;
-        margin-left: .75rem;
+        width: 100%;
+        background-color: purple;
+        font-size: 29px;
     }
-    img {
-        max-width: 67%;
-        margin-left: 1rem;
-        height: auto;
-        padding: 1rem;
-        margin: 1rem;
-    }
-    .left {
-        float: left
-    }
-    /* #container {
-        max-height: 250px;
-        width: 350px;
-        margin-top: .25rem;
-        margin-bottom: .25rem;
-    }*/
-    #container img {
-        left: ;
+    .mainnav li a {
+        display: block;
+        background-color: gold;
     }
     h3 {
-        margin-top: 1rem
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.55rem;
+    }
+    img {
+        display: inline-block;
+        max-width: 13.2%;
+        height: auto;
+        margin-top: 1rem;
     }
 }
 
@@ -335,29 +241,33 @@ span {
 
 @media screen and (min-width:60em) {
     .masthead {
+        margin-top: rem;
         width: 100%;
-        height: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
     .primary {
-        width: 80%;
+        margin-top: 1rem;
+        margin-bottom: 9rem;
+        margin-top: 2 rem;
+        max-width: 69.74%;
+        margin-right: 1rem;
+        margin-right: auto;
         float: left;
-        margin-left: 2.5rem;
-        padding: 1rem;
-        margin-bottom: 2.5rem;
+        padding: 10px;
     }
-    .left {
+    .mainnav {
+        margin-top: 2rem;
         float: left;
+        width: 25%;
     }
-}
-
-img {
-    float: left;
-    max-width: 625px;
-    max-width: 23%;
-    height: auto;
-    padding: 1rem;
-}
-
-
+    P {
+        font-family: 'Russo One', sans-serif;
+    }
+    img {
+        display: inline-block;
+        max-width: 13.89%;
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
